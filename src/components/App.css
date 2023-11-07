@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.page{
+    height: 3000px;
+}
+.shadow-contact{
+    box-shadow: 20px,20px,rgba(0, 0, 0, 0.7);
+}
+
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  

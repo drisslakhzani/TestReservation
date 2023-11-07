@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.page{
+    height: 3000px;
+    position: relative;
+}
+.shadow-contact{
+    box-shadow: 20px,20px,rgba(0, 0, 0, 0.7);
+}
+
+.bg {
+    overflow-x: hidden;
+    margin-top: 30px; /* You need to specify the sticky positioning */
+    top: 0; /* Example: Stick to the top of the viewport */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+                url("/public/images/bg_home.jpg");
+    background-size: fit;
+    background-repeat: no-repeat; /* You can adjust the sizing as needed */
+    z-index:-1; /* Be cautious with negative z-index values */
+}
+
+  
+  .page:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(20px); /* Adjust the blur strength as needed */
+    z-index: -1;
+    transition: filter 0.5s; /* Add a smooth transition effect */
+  }
+  /* for the first bg in the home page  */
+  .bg2 {
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+                url("/public/images/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; /* You can adjust the sizing as needed */
+    z-index:-1;
+} .redius{
+    border-radius: 0 50px 0 0 ;
+}
+.small-bg{
+    border-radius: 0 50px 0 50px ;
+}
+/* for the second bg in the hom page */
+.small1-bg{
+    border-radius:  50px 0 50px 0 ;
+}
+.redius1{
+    border-radius:  50px 0 0 0 ;
+}
+/* for login */
+.bg3{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+                url("/public/images/login_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; /* You can adjust the sizing as needed */
+    z-index:-1;
+}
